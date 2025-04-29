@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子報緣起 - 哈哈老師說AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .resource-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .resource-table th,
+        .resource-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .resource-table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+
+        .resource-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .resource-table a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .resource-table a:hover {
+            text-decoration: underline;
+        }
+
+        .category-icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+
+        .newsletter-resources {
+            margin-top: 40px;
+        }
+
+        .section-title {
+            margin: 30px 0 20px;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        /* 下拉選單樣式 */
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-dropdown > a::after {
+            content: "▼";
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            top: 100%;
+            left: 0;
+        }
+
+        .nav-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .active-submenu {
+            background-color: #e9e9e9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">哈哈老師說AI</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">教師生涯</a></li>
+                <li><a href="teaching.html">講師經歷</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="active">電子報</a>
+                    <div class="dropdown-content">
+                        <a href="newsletter-origin.html" class="active-submenu">緣起</a>
+                        <a href="newsletter-2025-05.html">2025/05</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="newsletter-content">
+            <h1>電子報緣起</h1>
+            
+            <div class="newsletter-section">
+                <div class="newsletter-description">
+                    <h2>大家好，我是哈哈老師！</h2>
+                    <p>在這裡，您可以獲得最新的 AI 與教育相關資訊。我每週都會精選來自全球各大教育平台、新聞媒體的重要內容，為您帶來第一手的 AI 教育新知、教學工具和實務經驗分享。</p>
+                    <p>訂閱我的電子報，您將收到：</p>
+                    <ul class="feature-list">
+                        <li>AI 教學工具使用技巧</li>
+                        <li>實用的教學資源分享</li>
+                        <li>最新的 AI 教育趨勢</li>
+                        <li>教學經驗分享</li>
+                    </ul>
+                </div>
+
+                <div class="subscription-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="email">電子郵件：</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">姓名：</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <button type="submit" class="subscribe-btn">訂閱電子報</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="newsletter-resources">
+                <h2 class="section-title">電子報資料來源</h2>
+                <table class="resource-table">
+                    <thead>
+                        <tr>
+                            <th>分類</th>
+                            <th>媒體 / 平台</th>
+                            <th>網址</th>
+                            <th>特色與內容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>📬 電子報</td>
+                            <td>ChatGPT for Education</td>
+                            <td><a href="https://edunewsletter.openai.com" target="_blank">edunewsletter.openai.com</a></td>
+                            <td>OpenAI 官方教育電子報，教師如何應用 ChatGPT 設計教學活動與教材。</td>
+                        </tr>
+                        <tr>
+                            <td>📬 電子報</td>
+                            <td>AI for Education Newsletter</td>
+                            <td><a href="https://aiforeducation.io" target="_blank">aiforeducation.io</a></td>
+                            <td>提供教師導向的 AI 教學工具、教案實例與活動設計建議。</td>
+                        </tr>
+                        <tr>
+                            <td>🌐 教育平台</td>
+                            <td>Edutopia – ChatGPT 專區</td>
+                            <td><a href="https://edutopia.org/topic/chatgpt-generative-ai" target="_blank">edutopia.org/topic/chatgpt-generative-ai</a></td>
+                            <td>美國教育實務網站，教師分享生成式 AI 的課堂應用案例，包含語言與寫作教學。</td>
+                        </tr>
+                        <tr>
+                            <td>🌐 教育平台</td>
+                            <td>Medium – AI 教育專欄</td>
+                            <td><a href="https://medium.com" target="_blank">medium.com</a></td>
+                            <td>全球教師與研究者分享 AI 教學策略、應用經驗及反思。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 國際新聞</td>
+                            <td>BBC News – Technology/Education</td>
+                            <td><a href="https://bbc.com/news/technology" target="_blank">bbc.com/news/technology</a></td>
+                            <td>全球教育科技新聞，聚焦 AI 改變課堂教學、政策與倫理議題。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 國際新聞</td>
+                            <td>The Conversation – 教育專區</td>
+                            <td><a href="https://theconversation.com/education" target="_blank">theconversation.com/education</a></td>
+                            <td>學者撰寫文章，討論 AI 對教學策略、學生學習影響與教育政策分析。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 國際新聞</td>
+                            <td>EdTech Magazine</td>
+                            <td><a href="https://edtechmagazine.com" target="_blank">edtechmagazine.com</a></td>
+                            <td>教育科技實務導向，分享 AI 學習平台與軟體導入的學校經驗。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 國際新聞</td>
+                            <td>Education Week</td>
+                            <td><a href="https://edweek.org" target="_blank">edweek.org</a></td>
+                            <td>美國教育新聞媒體，關注教師、學生與學校如何因應 AI 趨勢，提供實務訪談與調查。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 國際新聞</td>
+                            <td>Reuters 教育科技新聞</td>
+                            <td><a href="https://reuters.com" target="_blank">reuters.com</a></td>
+                            <td>提供全球視野下教育科技與AI政策報導，包含中國、日本等亞洲國家經驗。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 中文媒體</td>
+                            <td>《天下雜誌》教育頻道</td>
+                            <td><a href="https://cw.com.tw" target="_blank">cw.com.tw</a></td>
+                            <td>台灣媒體，討論教育創新、數位學習及亞洲地區 AI 教育應用案例。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 中文媒體</td>
+                            <td>《財新週刊》教育/科技專題</td>
+                            <td><a href="https://weekly.caixin.com" target="_blank">weekly.caixin.com</a></td>
+                            <td>深入分析中國 AI 教育政策與產業應用，觀察學校與企業合作模式。</td>
+                        </tr>
+                        <tr>
+                            <td>🌍 中文媒體</td>
+                            <td>《香港經濟日報》教育/創科專區</td>
+                            <td><a href="https://hket.com" target="_blank">hket.com</a></td>
+                            <td>關注香港及國際 AI 教育趨勢、教學方法與科技融入課程實務案例。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 哈哈老師說AI. All rights reserved.</p>
+            <div class="contact-info">
+                <p>聯絡方式：<a href="mailto:0204smile@gmail.com">0204smile@gmail.com</a></p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61572683411741" target="_blank">哈哈老師說Ai FB粉絲專頁</a>
+                <a href="https://www.youtube.com/channel/UCNd5qJnsLvm_RXQNaYmGJVg" target="_blank">Youtube 頻道</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
